@@ -1,19 +1,10 @@
-<script >
-export default{
-  data(){
-    return{
-      name:"Ei hlaing",
-    }
-  }
-}
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import Hero from '@/components/Hero.vue';
+import HomeCard from './components/HomeCard.vue';
 </script>
-
 <template>
- <h1>{{ name }}</h1>
+<Navbar/>
+<Hero />
+<HomeCard />
 </template>
-
-<style scoped>
-h1{
-  color: red;
-}
-</style>
